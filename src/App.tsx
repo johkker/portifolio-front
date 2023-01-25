@@ -22,7 +22,7 @@ function App() {
         sx={{ position: 'fixed', top: '0px', right: '5px' }}
         onClick={() => setDarkMode(!darkMode)}
       >
-        <Brightness4Icon />
+        {darkMode ? <Brightness7Icon /> : <Brightness4Icon />}
       </IconButton>
       <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
         <Stack sx={{ width: '100vw', height: '100vh' }}>
